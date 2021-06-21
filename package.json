@@ -34,7 +34,7 @@
     "electron-build": "node build/script.build.js && cd electron && quasar build"
   },
   "dependencies": {
-    "@feathersjs/client": "^3.3.0",
+    "@feathersjs/client": "^3.7.8",
     "axios": "^0.17.1",
     "babel-runtime": "^6.25.0",
     "feathers-vuex": "^1.1.3",
