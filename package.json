@@ -31,21 +31,24 @@
     "build": "node build/script.build.js",
     "start": "node build/script.build.js && quasar serve",
     "electron-dev": "node build/script.dev.js & cd electron && quasar dev",
-    "electron-build": "node build/script.build.js && cd electron && quasar build"
+    "electron-build": "node build/script.build.js && cd electron && quasar build",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@feathersjs/client": "^3.3.0",
-    "axios": "^0.17.1",
+    "axios": "^0.21.3",
     "babel-runtime": "^6.25.0",
     "feathers-vuex": "^1.1.3",
     "quasar-extras": "0.x",
     "quasar-framework": "^0.14.4",
-    "socket.io-client": "^2.0.4",
-    "vue": "^2.5.0",
+    "socket.io-client": "^2.4.0",
+    "vue": "^2.5.17",
     "vue-feathers": "^0.1.0",
     "vue-router": "^3.0.1",
     "vuelidate": "^0.6.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -93,5 +96,6 @@
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.19.1",
     "webpack-merge": "^4.1.0"
-  }
+  },
+  "snyk": true
 }
