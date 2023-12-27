@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@feathersjs/client": "^3.3.0",
-    "axios": "^0.17.1",
+    "axios": "^1.6.3",
     "babel-runtime": "^6.25.0",
     "feathers-vuex": "^1.1.3",
     "quasar-extras": "0.x",
